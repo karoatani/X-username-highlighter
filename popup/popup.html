@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Twitter Username Highlighter</title>
+    <link rel="stylesheet" href="popup.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <img src="/icons/icon32.png" alt="">
+        <h1>X Username Highlighter</h1>
+      </div>
+
+      <div class="input-group">
+        <div class="username-input-wrapper">
+          <input
+            type="text"
+            id="username"
+            placeholder="Enter username"
+            autocomplete="off"
+            spellcheck="false"
+          />
+          <span class="at-symbol">@</span>
+        </div>
+        <div class="color-picker-wrapper">
+          <input type="color" id="color" value="#FFE0B2" />
+          <label for="color">Pick color</label>
+        </div>
+        <button id="add" class="add-button">
+          <svg
+            width="16"
+            height="16"
+            viewBox="0 0 16 16"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M8 3V13M3 8H13"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+            />
+          </svg>
+          Add Username
+        </button>
+      </div>
+
+      <div class="divider"></div>
+
+      <div class="username-list" id="usernameList">
+        <!-- Usernames will be listed here -->
+      </div>
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>
